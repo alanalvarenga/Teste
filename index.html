@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/48938155eb24b4ccdde09426066869504c6dab3c/dist/css/bootstrap.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+  </head>
+  <body>
+    <!-- main wavesurfer.js lib -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.0.52/wavesurfer.min.js"></script>-->
+    <div class="container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/wavesurfer.min.js"></script>
+
+<!-- wavesurfer.js regions -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/plugin/wavesurfer.regions.min.js"></script>
+
+<div id="waveform"></div>
+
+<p align="center">
+  <button class="btn btn-primary" onclick="wavesurfer.playPause()">
+    <i class="glyphicon glyphicon-play"></i>
+    Play
+  </button>
+</p>
+<script>
+var wavesurfer = WaveSurfer.create({
+container: '#waveform',
+waveColor: 'violet'
+});
+
+wavesurfer.load('https://wavesurfer-js.org/example/media/demo.wav');
+
+wavesurfer.on('ready', function () {
+// Enable creating regions by dragging
+wavesurfer.enableDragSelection({});
+
+// Add a couple of pre-defined regions
+wavesurfer.addRegion({
+  start: 2, // time in seconds
+  end: 5, // time in seconds
+  color: 'hsla(100, 100%, 30%, 0.1)'
+});
+
+wavesurfer.addRegion({
+  start: 8,
+  end: 14,
+  color: 'hsla(200, 100%, 30%, 0.1)'
+});
+
+wavesurfer.addRegion({
+  start: 28,
+  end: 36,
+  color: 'hsla(400, 100%, 30%, 0.1)'
+});
+});
+</script>
+<!--    <script src="/bundle.js"></script-->
+  </body>
+
+</html>
