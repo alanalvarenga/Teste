@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Wavesurfer from './react-wavesurfer';
 
+var btn_play_pause = "PLAY";
+
 export default class MyComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -24,9 +26,18 @@ export default class MyComponent extends React.Component {
     });
   }
   play_pause(){
+    if(!this.state.playing){
     this.setState({
       playing: true
       });
+      btn_play_pause = "PAUSE";
+    }
+    else{
+      this.setState({
+        playing: false
+        });
+        btn_play_pause = "PLAY";          
+    }
   }
   render() {
     return (
@@ -37,7 +48,7 @@ export default class MyComponent extends React.Component {
           onPosChange={this.handlePosChange}
           playing={this.state.playing}
         />
-        <button onClick={this.play_pause.bind(this)} >PLAY</button>
+        <button className={'botão_playepause'} onClick={this.play_pause.bind(this)} >{btn_play_pause}</button>
       </div>
       );
   }
