@@ -1,8 +1,8 @@
 # Teste de audio com wavesurfer
 
-###Versão 0.1###
+###Versão 0.2###
 
-Versão usando wavesurfer apenas com html:
+Versão usando wavesurfer com react e botão play funcionando:
 
 ```
 	https://github.com/alanalvarenga/Teste.git

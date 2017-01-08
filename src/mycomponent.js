@@ -8,7 +8,7 @@ export default class MyComponent extends React.Component {
 
     this.state = {
       playing: false,
-      pos: 0
+      pos: 0.01
     };
     this.handleTogglePlay = this.handleTogglePlay.bind(this);
     this.handlePosChange = this.handlePosChange.bind(this);
@@ -23,6 +23,11 @@ export default class MyComponent extends React.Component {
       pos: e.originalArgs[0]
     });
   }
+  play_pause(){
+    this.setState({
+      playing: true
+      });
+  }
   render() {
     return (
       <div>
@@ -32,6 +37,7 @@ export default class MyComponent extends React.Component {
           onPosChange={this.handlePosChange}
           playing={this.state.playing}
         />
+        <button onClick={this.play_pause.bind(this)} >PLAY</button>
       </div>
       );
   }
