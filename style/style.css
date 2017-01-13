@@ -1,0 +1,83 @@
+.wave_com_btns{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.icon-play {
+  background: url('../src/play-button.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 35px;
+  width: 35px;
+  z-index: -1
+}
+.icon-pause {
+  background: url('../src/pause-symbol.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 35px;
+  width: 35px;
+  z-index: -1
+}
+.wavesurferClass{
+  position: center;
+  height: 100%;
+  width: 500px;
+  margin: 15px;
+}
+.btn-cart{
+  background: url('../src/cart.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 30px;
+  width: 30px;
+  z-index: -1
+}
+.carrinho{
+  margin: 10px;
+}
+.btn-heart{
+  background: url('../src/heart.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 30px;
+  width: 30px;
+  z-index: -1
+}
+.info{
+  margin: 10px;
+}
+.btn-info{
+  background: url('../src/information-button.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 30px;
+  width: 30px;
+  z-index: -1
+}
+.btn-cloud{
+  background: url('../src/cloud-download.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 30px;
+  width: 30px;
+  z-index: -1
+}
+.nome-audio{
+  position: right bottom;
+}
+
+td {
+   vertical-align: middle;
+   text-align: center;
+   padding: 150px;
+}
