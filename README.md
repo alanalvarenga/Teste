@@ -1,9 +1,9 @@
 # Teste de audio com wavesurfer
 
-###Vers o 0.5.0###
+###Vers o 0.9.0###
 
-Versão usando wavesurfer com react e botão play/pause funcionando.
-Varios Waves na tela e melhrando a interface e corringindo ainda alguns problemas
+Versão usando wavesurfer com react e interface quase completa, alguns erros ainda.
+Varios Waves na tela. 
 ```
 	https://github.com/alanalvarenga/Teste.git
 	> npm install

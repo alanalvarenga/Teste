@@ -1,3 +1,9 @@
+var path = require('path')
+var webpack = require('webpack')
+var combineLoaders = require('webpack-combine-loaders')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+//require('es6-promise').polyfill();
+
 module.exports = {
   entry: [
     './src/index.js'
@@ -9,11 +15,31 @@ module.exports = {
   },
   module: {
     loaders: [{
-      exclude: /node_modules/,
-      loader: 'babel',
-      query: {
-        presets: ['react', 'es2015', 'stage-1']
-      }
+      test: /\.js$/,
+      exclude: /(node_modules|bower_components)/,
+      include: path.join(__dirname, 'src'),
+      loaders: [
+        'react-hot',
+        'babel?presets[]=stage-1,presets[]=react,presets[]=es2015'
+      ]
+    },
+    {
+      test: /\.css$/,
+      loader: combineLoaders([
+        {
+          loader: 'style-loader'
+        },
+        {
+          loader: 'css-loader',
+          query: {
+            modules: true,
+            localIdentName: '[local]___[hash:base64:5]'
+          }
+        },
+        {
+          loader: 'autoprefixer?browsers=last 3 versions'
+        }
+      ])
     }]
   },
   resolve: {

@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 
-import MyComponent from '../mycomponent'
+import MyComponent from '../mycomponent';
+import Collections from './Collections';
+import Description from './Description';
+import Head from './Head';
 
 
 export default class SearchResult extends Component {
   render() {
     return (
-      <div>
+      <div className={'bg-color'}>
+        <Head />
+        <div> <Description /> </div>
+        <div> <Collections /> </div>
+        <div>
         <table>
           <tbody>
             <tr>
@@ -28,6 +35,7 @@ export default class SearchResult extends Component {
             </tr>
           </tbody>
         </table>
+        </div>
       </div>
     );
   }

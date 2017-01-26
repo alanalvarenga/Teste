@@ -1,0 +1,7 @@
+.menu-dropdown {
+  cursor:pointer;
+}
+
+:global(.rc-dropdown-menu-item) {
+  cursor:pointer;
+}
