@@ -1,0 +1,38 @@
+.contato{
+  vertical-align: left;
+  text-align: left;
+}
+.descricao{
+  width: 500px;
+}
+.icon-facebook {
+  background: url('/src/imagens/facebook-button.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 35px;
+  width: 35px;
+  z-index: -1;
+  border: 0px
+}
+.icon-twitter {
+  background: url('/src/imagens/twitter-button.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 35px;
+  width: 35px;
+  z-index: -1;
+  border: 0px
+}
+.icon-googleplus {
+  background: url('/src/imagens/google-plus-symbol.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 35px;
+  width: 35px;
+  z-index: -1;
+  border: 0px
+}
+.element-right {
+  padding-left: 24px;
+  padding-right: 8px;
+}

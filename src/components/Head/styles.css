@@ -1,0 +1,19 @@
+.head-bg{
+  background: url('/src/imagens/fundo-head.png') no-repeat left top ;
+  background-size: 100% 100%;
+}
+.open-book{
+  margin-left: 10px;
+}
+.nome-perfil{
+  margin-left: 15px;
+  font-size: 35px;
+  color: #fff;
+}
+.local{
+  margin-left: 15px;
+  color: #fff;
+}
+.files{
+  margin-left: 35px;
+}

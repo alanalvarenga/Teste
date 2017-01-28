@@ -1,0 +1,82 @@
+.icon-play {
+  background: url('/src/imagens/play-button.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 35px;
+  width: 35px;
+  z-index: -1;
+  border: 0px
+}
+.icon-pause {
+  background: url('/src/imagens/pause-symbol.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 35px;
+  width: 35px;
+  z-index: -1;
+  border: 0px
+}
+.btn-cart{
+  background: url('/src/imagens/cart.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 30px;
+  width: 30px;
+  z-index: -1;
+  border: 0px
+}
+.carrinho{
+  margin: 10px;
+}
+.btn-heart{
+  background: url('/src/imagens/heart.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 30px;
+  width: 30px;
+  z-index: -1;
+  border: 0px
+}
+.info{
+  margin: 10px;
+}
+.btn-info{
+  background: url('/src/imagens/information-button.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 30px;
+  width: 30px;
+  z-index: -1;
+  border: 0px
+}
+.btn-cloud{
+  background: url('/src/imagens/cloud-download.png') no-repeat left top ;
+  background-size: 100% 100%;
+  position: left top;
+  height: 30px;
+  width: 30px;
+  z-index: -1;
+  border: 0px
+}
+.nome-audio{
+  position: right bottom;
+}
+.wavesurferClass{
+  position: center;
+  height: 100%;
+  width: 500px;
+  margin: 15px;
+}
+.wave_com_btns{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
